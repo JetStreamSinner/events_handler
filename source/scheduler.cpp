@@ -35,6 +35,10 @@ void Scheduler::stop() {
 }
 
 void Scheduler::execute(std::function<void()> &&executor, std::chrono::milliseconds &&delay) {
+    execute(executor, delay);
+}
+
+void Scheduler::execute(const std::function<void()> &executor, const std::chrono::milliseconds &delay) {
     std::lock_guard<std::mutex> lock(_mutex);
     Executable exec;
     exec.executor = executor;

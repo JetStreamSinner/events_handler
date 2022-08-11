@@ -19,7 +19,9 @@ public:
 
     void start();
     void stop();
+
     void execute(std::function<void()> &&executor, std::chrono::milliseconds &&delay);
+    void execute(const std::function<void()> &executor, const std::chrono::milliseconds &delay);
 
     ~Scheduler();
 private:
