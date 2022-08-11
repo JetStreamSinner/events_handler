@@ -1,3 +1,3 @@
-set(src main.cpp)
-
+set(src main.cpp scheduler.cpp)
+set(CMAKE_CXX_FLAGS -pthread)
 add_executable(${PROJECT_NAME} ${src})
