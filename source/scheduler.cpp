@@ -1,7 +1,7 @@
-#include "scheduler.h"
-#include <iostream>
+#include "../include/scheduler.h"
+#include "../include/event.h"
 #include <iomanip>
-#include "event.h"
+#include <iostream>
 
 Scheduler::Scheduler() : _running(false) {
 

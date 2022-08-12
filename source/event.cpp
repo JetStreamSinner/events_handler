@@ -1,4 +1,4 @@
-#include "event.h"
+#include "../include/event.h"
 
 Event::Event(const std::string &event_name) : _event_name(event_name) {
 
